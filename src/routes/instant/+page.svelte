@@ -39,7 +39,7 @@
         </div>
     
         <div class="form-item">
-            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <button type="submit">Sign Up</button>
         </div>
     
     </form>
