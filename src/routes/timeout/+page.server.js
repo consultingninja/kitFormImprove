@@ -1,23 +1,24 @@
 
-export const actions={
+
+export const actions = {
     register: async ({request})=>{
-        
         const form = await request.formData();
-    
         const firstname = form.get('firstname')?? '';
         const lastname = form.get('lastname')?? '';
-        const email = form.get('email')??'';
-    
-        const data = {
+        const email = form.get('email')?? '';
+
+        const data ={
             firstname,
             lastname,
-            email,
-        };
+            email
+        }
 
         return {
             emailError: true,
+            message:"There was an error",
             ...data
         }
-        
+
     }
+
 }
